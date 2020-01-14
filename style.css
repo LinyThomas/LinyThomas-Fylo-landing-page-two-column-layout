@@ -44,52 +44,51 @@ header ul li{
     padding: 10px;
     font-size: 14px;
 }
-#sec1{
+.sec1{
     margin: 70px 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-#sec1-text{
+.sec1 > div:first-child{
     width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     padding: 0 20px;
 }
-#sec1-text p{
+.sec1 div:first-child p{
     margin-top: 20px;
     font-size: 16px;
 }
-#sec1-text input{
+.sec1 div:first-child input{
     width:50%;
     padding: 10px;
     margin-top: 20px;
     border-radius: 5px;
 }
-#sec1-text .btn{
+.sec1 div:first-child .btn{
     display:inline-block;   
     padding: 12px;
     margin-left: 5px;
     width:40%;
 
 }
-#sec1-text a{    
+.sec1 div:first-child a{    
     text-decoration: none;  
     color:#fff;  
    
 }
-
-#sec1-img{
+.sec1 div:nth-child(2){
     width: 50%;
     height: 100%;
     margin: 0 20px;
 }
-#sec1-img img{
+.sec1 div:nth-child(2) img{
     width: 100%;
     height: 100%;
 }
-#sec2-top-img{
+.sec2-img{
     width: 100%;
     height: 100px;
     background-image: url(images/bg-curve-desktop.png);
@@ -97,50 +96,50 @@ header ul li{
     background-size: cover;
 
 }
-#sec2{
+.sec2{
     width: 100%;
     margin: 0 auto;
     background-size: contain;
     background-position: top;
     background-repeat: no-repeat;
-    padding: 0 80px;
+    padding: 0 80px 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color:#F8F8FE;
 }
 
-#sec2-text{
+.sec2 > div:first-child{
     width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
-#sec2-text p{
+.sec2 div:first-child p{
     margin: 10px 0;
     font-size: 14px;
     width: 85%;
 }
-#sec2-link a{
+.sec2 div:first-child div:first-of-type a{
     color:hsl(170, 45%, 43%);
-    font-size: 14px;
+    font-size: 14px;    
     text-decoration: none;
     font-weight: 700;
 }
-#sec2-img{
+.sec2 div:nth-child(2){
     width: 50%;
     height: 100%;
     margin: 0 20px;
-}
-#sec2-img img{
+} 
+.sec2 div:nth-child(2) img{
     width: 100%;
     height: 100%;
 }
-hr{
+.sec2 div:first-child div:first-of-type hr{
     width: 145px;
     color:hsl(170, 45%, 43%);
 }
-#testimonial{
+.sec2 .testimonial{
     background-color: #fff;
     width: 60%;
     padding: 20px;
@@ -150,71 +149,72 @@ hr{
 box-shadow: 6px 6px 5px -2px rgba(189,179,174,1);
    
 }
-#testimonial p{
+.sec2 .testimonial p{
     font-size: 12px;
 
 }
-#testimonial-img{    
+.sec2 .testimonial div:first-of-type{    
 display: flex;
 justify-content:flex-start;
 align-items: center;
 }
 
-#testimonial-img img{
+.sec2 .testimonial div:first-of-type img{
     border-radius: 50%;
     width: 30px;
     height: 30px;
 }
-#test-text{
+.sec2 .testimonial div:first-of-type div:first-of-type{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    align-items: flex-start;
 }
-#testimonial span{
+.sec2 .testimonial div:first-of-type div:first-of-type span{
     font-size:9px;
     margin-left: 5px;
     vertical-align: top;
 
 }
-#access{
+.access{
     background-color: hsl(238, 22%, 44%);
     padding: 60px 80px;
     color: #fff;
     display: flex;
     justify-content: space-between; 
 }
-#access p{
+.access p{
     font-size: 12px;
     margin-top: 20px;
 
 }
-#access-text{
+.access div:first-child{
     width: 50%;
     float: left;
     margin-right: 105px;
 }
-#access-text p{
+.access div:first-child p{
     width: 70%;
     float: left;
     margin-right: 105px;
 }
-#access-input{
+.access div:nth-child(2){
     width: 50%;
     float: right;
 }
-#access-input input{
+.access div:nth-child(2) input{
     padding: 10px;
     width: 90%;
     border-radius: 5px;
     margin-bottom: 20px;
 }
-#access-input .btn{   
+.access div:nth-child(2) .btn{   
    width: 50%;
    padding: 15px;
    text-align: center;
   
 }
-#access-input a{
+.access div:nth-child(2) a{
     color: #fff;
     text-decoration: none;
 }
@@ -225,14 +225,17 @@ footer{
     font-size: 11px;
     
 }
-#col1,#col2,#col3,#col4{
+footer > div:first-child{
+    margin-bottom: 10px ;
+}
+footer .footer-cols div:first-child,footer .footer-cols div:nth-child(2),footer .footer-cols div:nth-child(3),footer .footer-cols div:nth-child(4){
     display: inline-block;    
 }
-#col1{
+footer .footer-cols div:first-child{
     width:35%;
     vertical-align: top;
 }
-#col2,#col3,#col4{    
+.footer-cols div:nth-child(2),.footer-cols div:nth-child(3),.footer-cols div:nth-child(4){    
     width:20%;
     vertical-align: top;
 }
@@ -245,34 +248,34 @@ footer{
     font-size: 9px;
 }
 
-.footer-icon img{
+footer .footer-cols div:first-child img{
     width:10px;
     height: 10px;     
     margin-right: 10px;
     
 }
-.footer-icon,.footer-text{
+.footer-cols div:first-child img,.footer-cols div:first-child span{
     display: inline-block;    
     vertical-align: top;
     margin-bottom: 20px;
 }
-#col2 ul li, #col3 ul li{
+footer .footer-cols div:nth-child(2) ul li, footer .footer-cols div:nth-child(3) ul li{
     list-style-type: none;
     margin-bottom: 10px;
     
 }
-#col2 ul li a, #col3 ul li a{
+footer .footer-cols div:nth-child(2) ul li a, footer .footer-cols div:nth-child(3) ul li a{
     color:#fff;
     font-size: 11px;
     text-decoration: none;
 }
-#copyright{
+footer > div:nth-child(3){
     text-align: center;
     font-size: 11px;
     margin-top: 40px;
 }
 
-@media screen and (max-width:700px) and (min-width:300px){
+@media screen and (max-width:875px) {
     body{
         margin: 0;
     }
@@ -290,42 +293,42 @@ footer{
         padding: 10px;        
         font-size: 11px;
     }
-    #sec1{
+    .sec1{
         flex-direction: column-reverse;
         padding: 40px 20px;
         margin: 40px auto;
         width: 100%;
     }
-    #sec1-img{
+    .sec1 img{
         width: 100%;
     }
-    #sec1-text{
+    .sec1 > div:first-child{
         width: 100%;
         justify-content: center;
         margin: 0;
         padding: 0;
     }
-    #sec1-text h1{
+    .sec1 > div:first-child h1{
         font-size: 24px;
         text-align: center;
         margin-top: 40px;
         font-weight: 700;
     }
-    #sec1-text p{
+    .sec1 > div:first-child p{
         width: 100%;
         text-align: center;
         padding: 0 5px;
         font-size: 16px;
         line-height: 2;
     }
-    #sec1-text input{
+    .sec1 > div:first-child input{
         width: 100%;
         padding: 10px 40px;
         font-family: 'Open Sans', sans-serif;
         border: 1px solid;
         margin-bottom: 20px;
     }
-    #sec1-text .btn{
+    .sec1 > div:first-child .btn{
         width: 100%;
         display: block;
         margin: 0 auto;
@@ -333,60 +336,62 @@ footer{
         padding: 15px 40px;
         font-size: 14px;
     }
-    #sec2{
+    .sec2{
         flex-direction: column-reverse;
         padding: 0 20px 40px;
         width: 100%;
     }
-    #sec2-top-image{
+    .sec2-img{
         background-image: url(images/bg-curve-mobile.png);
     }
    
-    #sec2-text {
+    .sec2 > div:first-child  {
         margin: 60px 0;
         width: 100%;
         padding: 0 30px;
         line-height: 2;
         font-size: 18px;
     }
-    #sec2-text h2{
-        font-size: 18px;
+    .sec2 > div:first-child > h2{
+        font-size: 16px;
         font-weight: bold;        
         text-align: center;
     }
-    #sec2-text p{
+    .sec2 > div:first-child > p{
         text-align: center;
         width: 100%;
     }
-    #sec2-text hr{
+    .sec2 > div:first-child hr{
         width: 50%;
         margin: 0 auto;
     }
-    #sec2-link{
-        text-align: center;
+    .sec2 > div:first-child div:first-of-type{
+        width: 100%;
+        text-align: center; 
     }
-    #testimonial{
+   
+    .sec2 .testimonial{
         width: 100%;
     }
-    #testimonial p{
+    .sec2 .testimonial p{
         text-align: left;
     }
-    #access{
+    .access{
         flex-direction: column;
         align-items: center;
         padding: 40px 20px;
         width: 100%;
     }
-    #access-text{
+    .access > div:first-child{
         width: 100%;
         float: none;
         margin: 0;
         text-align: center;
     }
-    #access-text h2{
+    .access > div:first-child h2{
         font-size: 22px;
     }
-    #access-text p{
+    .access > div:first-child > p{
         width: 100%;
         float: none;
         margin: 20px 0;
@@ -395,44 +400,54 @@ footer{
         font-size: 15px;
     }
  
-    #access-input{
+    .access > div:nth-child(2){
         width: 80%;
         text-align: center;
     }
-    #access-input input{
+    .access > div:nth-child(2) input{
         width: 100%;
         padding: 10px;
     }
-    #access-input .btn{
+    .access > div:nth-child(2) .btn{
         width: 100%;
     }
-    #access-input a{
+    .access > div:nth-child(2) a{
         padding: 10px;
     }
     footer{
         padding: 40px;
     }
-    #footer-logo img{
+    footer > div:first-child img{
            width: 180px; 
            height: 80px;
            margin-bottom: 20px;
     }
-    .footer-cols{
+    footer > .footer-cols{
         flex-direction: column;
     }
-    #col1,#col2,#col3,#col4{
+    footer .footer-cols > div:first-child,footer .footer-cols > div:nth-child(2),footer .footer-cols > div:nth-child(3),footer .footer-cols > div:nth-child(4){
+        
         display: block;
         width: 100%;
         font-size: 16px;
         margin-bottom: 20px;
         line-height: 2;
     }
-    #col2 ul li a, #col3 ul li a{
-        font-size: 16px;
+    footer .footer-cols div:first-child img{
+        width: 20px;
+        height: 20px;
+        margin-bottom: 0;
     }
-    #col4{
+    footer .footer-cols div:first-child >span{
+        font-size: 14px;
+    }
+    footer .footer-cols > div:nth-child(2) ul li a,footer .footer-cols > div:nth-child(3) ul li a{
+   
+        font-size: 14px;
+    }
+    .footer-cols > div:nth-child(4){
         text-align: center;
-    }
+    }                                                                                                                                       
     .fab{
         padding: 10px;
         font-size: 12px;
