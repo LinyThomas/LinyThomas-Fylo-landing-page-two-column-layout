@@ -44,51 +44,51 @@ header ul li{
     padding: 10px;
     font-size: 14px;
 }
-.sec1{
+.intro{
     margin: 70px 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.sec1 > div:first-child{
+.intro > div:first-child{
     width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     padding: 0 20px;
 }
-.sec1 div:first-child p{
+.intro div:first-child p{
     margin-top: 20px;
     font-size: 16px;
 }
-.sec1 div:first-child input{
+.intro div:first-child input{
     width:50%;
     padding: 10px;
     margin-top: 20px;
     border-radius: 5px;
 }
-.sec1 div:first-child .btn{
+.intro div:first-child .btn{
     display:inline-block;   
     padding: 12px;
     margin-left: 5px;
     width:40%;
 
 }
-.sec1 div:first-child a{    
+.intro div:first-child a{    
     text-decoration: none;  
     color:#fff;  
    
 }
-.sec1 div:nth-child(2){
+.intro div:nth-child(2){
     width: 50%;
     height: 100%;
     margin: 0 20px;
 }
-.sec1 div:nth-child(2) img{
+.intro div:nth-child(2) img{
     width: 100%;
     height: 100%;
 }
-.sec2-img{
+.feature-img{
     width: 100%;
     height: 100px;
     background-image: url(images/bg-curve-desktop.png);
@@ -96,7 +96,7 @@ header ul li{
     background-size: cover;
 
 }
-.sec2{
+.features{
     width: 100%;
     margin: 0 auto;
     background-size: contain;
@@ -109,37 +109,37 @@ header ul li{
     background-color:#F8F8FE;
 }
 
-.sec2 > div:first-child{
+.features > div:first-child{
     width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
-.sec2 div:first-child p{
+.features div:first-child p{
     margin: 10px 0;
     font-size: 14px;
     width: 85%;
 }
-.sec2 div:first-child div:first-of-type a{
+.features div:first-child div:first-of-type a{
     color:hsl(170, 45%, 43%);
     font-size: 14px;    
     text-decoration: none;
     font-weight: 700;
 }
-.sec2 div:nth-child(2){
+.features div:nth-child(2){
     width: 50%;
     height: 100%;
     margin: 0 20px;
 } 
-.sec2 div:nth-child(2) img{
+.features div:nth-child(2) img{
     width: 100%;
     height: 100%;
 }
-.sec2 div:first-child div:first-of-type hr{
+.features div:first-child div:first-of-type hr{
     width: 145px;
     color:hsl(170, 45%, 43%);
 }
-.sec2 .testimonial{
+.features .testimonial{
     background-color: #fff;
     width: 60%;
     padding: 20px;
@@ -149,28 +149,28 @@ header ul li{
 box-shadow: 6px 6px 5px -2px rgba(189,179,174,1);
    
 }
-.sec2 .testimonial p{
+.features .testimonial p{
     font-size: 12px;
 
 }
-.sec2 .testimonial div:first-of-type{    
+.features .testimonial div:first-of-type{    
 display: flex;
 justify-content:flex-start;
 align-items: center;
 }
 
-.sec2 .testimonial div:first-of-type img{
+.features .testimonial div:first-of-type img{
     border-radius: 50%;
     width: 30px;
     height: 30px;
 }
-.sec2 .testimonial div:first-of-type div:first-of-type{
+.features .testimonial div:first-of-type div:first-of-type{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
 }
-.sec2 .testimonial div:first-of-type div:first-of-type span{
+.features .testimonial div:first-of-type div:first-of-type span{
     font-size:9px;
     margin-left: 5px;
     vertical-align: top;
@@ -293,42 +293,42 @@ footer > div:nth-child(3){
         padding: 10px;        
         font-size: 11px;
     }
-    .sec1{
+    .intro{
         flex-direction: column-reverse;
         padding: 40px 20px;
         margin: 40px auto;
         width: 100%;
     }
-    .sec1 img{
+    .intro img{
         width: 100%;
     }
-    .sec1 > div:first-child{
+    .intro > div:first-child{
         width: 100%;
         justify-content: center;
         margin: 0;
         padding: 0;
     }
-    .sec1 > div:first-child h1{
+    .intro > div:first-child h1{
         font-size: 24px;
         text-align: center;
         margin-top: 40px;
         font-weight: 700;
     }
-    .sec1 > div:first-child p{
+    .intro > div:first-child p{
         width: 100%;
         text-align: center;
         padding: 0 5px;
         font-size: 16px;
         line-height: 2;
     }
-    .sec1 > div:first-child input{
+    .intro > div:first-child input{
         width: 100%;
         padding: 10px 40px;
         font-family: 'Open Sans', sans-serif;
         border: 1px solid;
         margin-bottom: 20px;
     }
-    .sec1 > div:first-child .btn{
+    .intro > div:first-child .btn{
         width: 100%;
         display: block;
         margin: 0 auto;
@@ -336,44 +336,44 @@ footer > div:nth-child(3){
         padding: 15px 40px;
         font-size: 14px;
     }
-    .sec2{
+    .features{
         flex-direction: column-reverse;
         padding: 0 20px 40px;
         width: 100%;
     }
-    .sec2-img{
+    .feature-img{
         background-image: url(images/bg-curve-mobile.png);
     }
    
-    .sec2 > div:first-child  {
+    .features > div:first-child  {
         margin: 60px 0;
         width: 100%;
         padding: 0 30px;
         line-height: 2;
         font-size: 18px;
     }
-    .sec2 > div:first-child > h2{
+    .features > div:first-child > h2{
         font-size: 16px;
         font-weight: bold;        
         text-align: center;
     }
-    .sec2 > div:first-child > p{
+    .features > div:first-child > p{
         text-align: center;
         width: 100%;
     }
-    .sec2 > div:first-child hr{
+    .features > div:first-child hr{
         width: 50%;
         margin: 0 auto;
     }
-    .sec2 > div:first-child div:first-of-type{
+    .features > div:first-child div:first-of-type{
         width: 100%;
         text-align: center; 
     }
    
-    .sec2 .testimonial{
+    .features .testimonial{
         width: 100%;
     }
-    .sec2 .testimonial p{
+    .features .testimonial p{
         text-align: left;
     }
     .access{
